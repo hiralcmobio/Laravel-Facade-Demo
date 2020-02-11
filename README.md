@@ -1,6 +1,6 @@
-###### **Laravel Facade**
+## **Laravel Facade**
 
-###### **What Is Larave Facade**
+#### **What Is Larave Facade**
 
 Laravel Facades provides "static" interface to classes. which are availables in service container.
 You can use Facade class without creating object of the class. Laravel Facade provides "static proxies" to classes which are in service container.
@@ -9,14 +9,14 @@ testabily and flexibility.
 
 Laravel's facades are defined in the Illuminate\Support\Facades namespace.
 
-###### **Why We Should Use Facade**
+#### **Why We Should Use Facade**
 
 Laravel Facade provides many benefits like it gives short and memorable syntax. and also we does not need to inject Facade class or not need to configure 
 it manually. and we can test easily php's dynamic methods. it can be easy to let your classes continue to grow and use many facades in a single class.
 
 So, let's start to use Facade
 
-###### **How To Create And Use Facade**
+#### **How To Create And Use Facade**
 
 First, We need to make helper class in app. So, let's create `LaraFacades.php` file in `app/LaraFacades/`. and let make one function as below:
 
@@ -81,7 +81,7 @@ and add code to register
 
 And now we will add this file to `Config/app.php` aliases like,
 
-`'Larashout'   =>  App\Larashout\LarashoutFacade::class`
+`'LaraFacade' => App\LaraFacades\LaraFacadesDemo::class,`
 
 and now we will do composer reload like,
 
